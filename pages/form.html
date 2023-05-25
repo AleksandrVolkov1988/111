@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Keywords" content="HTML, CSS, шпаргалка, верстка">
+		<meta name="description" content="Шпаргалка для верстки"> 
+		<link rel="shortcut icon" href="images/icon.png">
+		<link rel="stylesheet" type="text/css" href="../styles/style.css">
+		<title>Шпаргалка</title>
+	</head>
+	<body>
+		<header>
+			<div id="hexagon2"></div>
+			<div id="hexagon"><span id="V">V</span><span id="VOLALEVIT">VOLALEVIT</span></div>
+			<a id="login" class="button" href="../pages/login.html">Войти
+				<span class="button_line button_top"></span>
+				<span class="button_line button_right"></span>
+				<span class="button_line button_bottom"></span>
+				<span class="button_line button_left"></span>
+			</a>
+		</header>
+		<nav>
+			<form  id="search1">
+  				<input type="search">
+  				<input id="search2" type="submit" value="Найти">
+			</form>
+			<a id="p1" class="bot_small button" href="../index.html">Текст. Таблицы. Списки
+				<span class="button_line button_top"></span>
+				<span class="button_line button_right"></span>
+				<span class="button_line button_bottom"></span>
+				<span class="button_line button_left"></span></a>
+			<a id="p2" class="bot_small button" href="../pages/multimedia.html">Изображения. Аудио. Видио
+				<span class="button_line button_top"></span>
+				<span class="button_line button_right"></span>
+				<span class="button_line button_bottom"></span>
+				<span class="button_line button_left"></span></a>
+			<a id="p3" class="bot_small button" href="form.html">Кнопки. Поля ввода
+				<span class="button_line button_top"></span>
+				<span class="button_line button_right"></span>
+				<span class="button_line button_bottom"></span>
+				<span class="button_line button_left"></span></a>
+			<a id="p4" class="bot_small button" href="../pages/outer.html">Фреймы. Ссылки
+				<span class="button_line button_top"></span>
+				<span class="button_line button_right"></span>
+				<span class="button_line button_bottom"></span>
+				<span class="button_line button_left"></span></a>
+			<a id="back" class="button" href="#UP">Наверх
+				<span class="button_line button_top"></span>
+				<span class="button_line button_right"></span>
+				<span class="button_line button_bottom"></span>
+				<span class="button_line button_left"></span></a>	
+		</nav>
+		<aside>
+			<p class="advertising" >Здесь могла бы быть <br> ваша реклама</p>
+			<p class="advertising" >Здесь могла бы быть <br> ваша реклама</p>
+			<p class="advertising" >Здесь могла бы быть <br> ваша реклама</p>
+		</aside>
+			<article>
+				<a id="UP"></a>
+				<h2>Кнопки и поля ввода</h2>
+				<p>Копка с текстом</p>
+				<form> 	
+  					<input type="button" id="button1" value="Кнопка">
+  				</form>
+  				<p>Копка с изображением</p>
+  				<form>
+  					<button type="button"><img src="../images/icon.png" alt="кнопка" width="40"></button>
+  				</form>
+  				<p>Поле для отправки данных</p>
+  				<form action="buttonphp.php">
+  					<input type="text" id="TEXT">
+  					<input type="reset" id="button2" value="Очистить">	
+  					<input type="submit" id="button3" value="Отправить">
+  				</form> 
+  				<p>Поле для логина и пароля</p>
+  				<form>
+  					<input type="text" size="60">
+  				</form>
+  				<form>
+ 					<input type="password" size="60">
+ 				</form>
+ 				<p>Поле для ввода текста или коментария</p>
+ 				<textarea name="comment" cols="40" rows="3"></textarea>
+ 				<p>Поле для загрузки файлов</p>
+ 				<form enctype="multipart/form-data" method="post">
+					<input type="file" id="file" multiple accept="audio/*,video/*,image/*">
+					<p><input type="submit" value="Отправить"></p>
+				</form>
+			</article>
+			<article>
+				<h2>Поле для выбора варианта</h2>
+				<p>Поле с выбором одного из вариантов</p>
+			<form>
+   			<input type="radio" name="browser" value="ie"> Internet Explorer<Br>
+  			<input type="radio" name="browser" value="opera"> Opera<Br>
+   			<input type="radio" name="browser" value="firefox"> Firefox<Br>
+   			</form>
+   			<p>Поле с выбором нескольких вариантов</p>
+   			<form>
+   				<input type="checkbox" name="checkbox" value="1"> 1 <br>
+   				<input type="checkbox" name="checkbox" value="2"> 2 <br>
+   				<input type="checkbox" name="checkbox" value="3"> 3 <br>
+   				<input type="checkbox" name="checkbox" value="4"> 4 <br>
+   				<input type="checkbox" name="checkbox" value="5"> 5 <br>
+   			</form>
+   			<p>Поле для выбора одно из вариантов из списка</p>
+			<form>
+				<select name="namber">
+					<option value="1"> 1 </option>
+					<option value="2"> 2 </option>
+					<option value="3"> 3 </option>
+					<option value="4"> 4 </option>
+					<option value="5"> 5 </option>
+					<option value="6"> 6 </option>
+					<option value="7"> 7 </option>
+					<option value="8"> 8 </option>
+				</select>
+			</form>
+			<p>Поле для выбора сразу несколькиз вариантов из списка</p>
+			<form>
+				<select multiple>
+					<option> 1 </option>
+					<option> 2 </option>
+					<option> 3 </option>
+					<option> 4 </option>
+					<option> 5 </option>
+					<option> 6 </option>
+				</select>
+			</form>
+			<p>Поле для выбора сразу несколькиз вариантов из комбенированного списка</p>
+			<form>
+				<select name="namberselect" multiple>
+					<optgroup label="Цифры">
+						<option> 1 </option>
+						<option> 2 </option>
+						<option> 3 </option>
+					</optgroup>
+					<optgroup label="Буквы">
+						<option> A </option>
+						<option> B </option>
+						<option> C </option>
+					</optgroup>
+				</select>
+			</form>
+			</article>
+		<footer>
+			<p>Копирование и публикация караются Высшими Силами</p>
+		</footer>
+	</body>
+</html>

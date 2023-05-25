@@ -1,0 +1,292 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-image: url(../images/title.png);
+	position: relative;
+	z-index: 1;
+}
+header {
+	color: #fff;
+	background-image: url(../images/title.png);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 160px;
+	z-index: 9;
+}
+#hexagon {
+	width: 100px;
+	height: 55px;
+	background: #000;
+	position: relative;
+	left: 31px;
+	top: -4px;
+}
+#hexagon:before {
+	content: "";
+	position: absolute;
+	top: -25px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 25px solid #000000;	
+}
+#hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -25px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 25px solid #000000;
+}
+#hexagon2 {
+	width: 102px;
+	height: 57px;
+	background: #fff;
+	position: relative;
+	left: 30px;
+	top: 52px;
+}
+#hexagon2:before {
+	content: "";
+	position: absolute;
+	top: -26px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 51px solid transparent;
+	border-right: 51px solid transparent;
+	border-bottom: 26px solid #fff;	
+}
+#hexagon2:after {
+	content: "";
+	position: absolute;
+	bottom: -26px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 51px solid transparent;
+	border-right: 51px solid transparent;
+	border-top: 26px solid #fff;
+
+}
+#V {
+	font-weight: bold;
+	font-size: 90px;
+	position: absolute;
+	z-index: 11;
+	top: -22px;
+	left: 17px;
+}
+#VOLALEVIT {
+	font-family: 'Algerian';
+	font-weight: bold;
+	font-size: 130px;
+	position: absolute;
+	z-index: 11;
+	top: -50px;
+	left: 150px;
+}
+.button {
+	position: relative;
+	display: inline-block;
+	padding: 15px 30px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 28px;
+	letter-spacing: 4px;
+	overflow: hidden;
+	transition: 0.2s;
+}
+.bot_small {
+	padding: 10px 20px;
+	color: #fff;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+.button_line {
+	position: absolute;
+	display: block;
+}
+.button_top {
+	top: 0px;
+	left: -100%;
+	width: 100%;
+	height: 4px;
+	background: linear-gradient(90deg, transparent, #fff);
+}
+.button:hover .button_top {
+	left: 100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+}
+.button_bottom {
+	bottom: 0px;
+	right: -100%;
+	width: 100%;
+	height: 4px;
+	background: linear-gradient(270deg, transparent, #fff);
+}
+.button:hover .button_bottom {
+	right: 100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+}
+.button_left {
+	bottom: -100%;
+	left: 0px;
+	width: 4px;
+	height: 100%;
+	background: linear-gradient(0deg, transparent, #fff);
+}
+.button:hover .button_left {
+	bottom: 100%;
+	transition: 1s;
+}
+.button_right {
+	top: -100%;
+	right: 0px;
+	width: 4px;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #fff);
+}
+.button:hover .button_right {
+	top: 100%;
+	transition: 1s;
+}
+.button:hover {
+	box-shadow: 0 0 10px #fff, 0 0 20px #9ff, 0 0 40px #fff;
+	background-color: #fff;
+	color: #333;
+	transition-delay: 0.6s;
+	font-weight: bold;
+}
+#login {
+	top: -65px; 
+	right: -1700px;
+}
+nav {
+	color: #fff;
+	background-image: url(../images/title.png);
+	position: fixed;
+	top: 160px;
+	left: 0px;
+	width: 400px;
+	height: 100%;
+	z-index: 9;
+}
+#search1 {
+	top: 65px; 
+	left: 75px;
+	position: relative;
+}
+#search2 {
+	border: none;
+	color: #fff;
+	background: 100px 100px #111;
+	font-size: 16px;
+}
+#p1 {
+	top: 180px; 
+	left: 20px;
+	position: relative;
+
+}
+#p2 {
+	top: 180px; 
+	left: 20px;
+	position: relative;
+
+}
+#p3 {
+	top: 180px; 
+	left: 20px;
+	position: relative;
+
+}
+#p4 {
+	top: 160px; 
+	left: 20px;
+	position: relative;
+
+}
+#back {
+	top: 550px; 
+	left: 5px;
+	position: relative;
+
+}
+aside {
+	color: #fff;
+	background-image: url(../images/title.png);
+	position: fixed;
+	top: 160px;
+	right: 0px;
+	width: 400px;
+	height: 100%;
+	z-index: 9;
+	text-align: center;
+}
+.advertising {
+	color: #f00;
+	font-family: 'Century Gothic';
+	letter-spacing: -0.9px;
+	font-size: 20px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	font-weight: bold;
+	display: block;
+	animation-name: spin;
+	animation-duration: 12s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes spin {
+	0% 		{ transform: rotate(0deg); color: #f00; }
+	9%	 	{ transform: rotate(0deg); color: #ff0; }
+	18% 	{ transform: rotate(0deg); color: #0f0; }
+	27% 	{ transform: rotate(0deg); color: #0ff; }
+	36% 	{ transform: rotate(0deg); color: #00f; }
+	45% 	{ transform: rotate(0deg); color: #f0f; }
+	54% 	{ transform: rotate(0deg); color: #f00; }
+	63% 	{ transform: rotate(72deg); color: #ff0; }
+	72% 	{ transform: rotate(144deg); color: #0f0; }
+	81% 	{ transform: rotate(216deg); color: #0ff; }
+	90% 	{ transform: rotate(288deg); color: #00f; }
+	100% 	{ transform: rotate(360deg); color: #f0f; }
+
+}
+#main {
+	position: relative;
+	background-color: #fff;
+	margin: 200px 500px 10px 500px;
+	text-align: center;
+	border: solid #fff 40px;
+	border-image: url(../images/img4.jpg) 40 repeat ;
+}
+article {
+	position: relative;
+	background-color: #fff;
+	margin: 200px 500px 10px 500px;
+	border: solid #fff 40px;
+	border-image: url(../images/img4.jpg) 40 repeat ;
+}
+h1 {
+	text-align: center;
+}
+h2 {
+	text-align: center;
+}
+footer {
+	color: #fff;
+	position: relative;
+	background-image: url(../images/title.png);
+	margin: 200px 500px 10px 500px;
+}
